@@ -1,0 +1,25 @@
+
+hr{
+    border: none;
+    border-bottom: 1px solid var(--gray-border);
+    width: 100%;
+    margin: 2em auto;
+}
+
+
+.separator {
+    position: relative;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+
+    &:before, &:after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: var(--gray-border);
+        flex-basis: 1;
+    }
+}

@@ -1,0 +1,35 @@
+
+
+/* ------------------   Joli Mardi - Max-width   ----------------- */
+
+.max-width,
+.max-width-small,
+.max-width-large {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-grow: 1;
+}
+.max-width {
+    max-width: var(--max-width);
+}
+.max-width-large {
+    max-width: var(--max-width-large);
+}
+.max-width-small {
+    max-width: var(--max-width-small)
+}
+.centered {
+    text-align: center;
+}
+
+
+@media(max-width: 460px) {
+    .max-width,
+    .max-width-small,
+    .max-width-large {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

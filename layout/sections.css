@@ -1,0 +1,52 @@
+/* ------------------   Joli Mardi - Sections   ----------------- */
+
+.section {
+    padding: 3.8em 0px;
+
+    &.gray {
+        background: var(--light-gray);
+    }
+    &.gray-alt {
+        background: var(--light-gray-alt);
+    }
+
+    &.blue {
+        background: var(--blue);
+
+        &, h1, h2, h3, .h1, .h2, .h3, p {
+            color: #ffffff;
+        }
+    }
+
+    &.margin-top {
+        margin-top: 2.8em;
+    }
+    &.padding-top {
+        padding-top: 2.8em;
+    }
+    &.no-padding-bottom {
+        padding-bottom: 0;
+    }
+    &.full-height {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.section {
+    > h1, > .h1, > h2, > .h2 {
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .section {
+        padding: 3.4em 0px;
+    }
+}
