@@ -3,6 +3,10 @@
 */
 
 :root {
+
+    --font-family: "Outfit", sans-serif;
+    --font-family-alt: var(--font-family);
+
     /* basic font font-size (fs) et line-height (lh) */
     --fs: 18px;
     --lh: 1.6;
