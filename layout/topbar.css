@@ -1,0 +1,49 @@
+/* ------------------   Joli Mardi - Topbar   ----------------- */
+
+.main {
+    /* Menu height */
+    padding-top: var(--topbar-height);
+}
+
+
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    transition: all 0.15s ease-out;
+    overflow: hidden;
+    min-width: 340px;
+    box-sizing: border-box;
+    padding: 0;
+
+    .max-width, .max-width-large{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+
+/* Small topbar when scrolled <body class="topbar-small"> */
+.topbar-small .topbar .logo img {
+    width: 140px;
+}
+
+a.logo {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    outline: none;
+    transition: all 0.15s ease-out;
+    flex-grow: 1;
+
+    img {
+        width: 160px;
+        height: auto;
+        transition: all 0.15s ease-out;
+    }
+}

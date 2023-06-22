@@ -1,0 +1,239 @@
+/* ------------------   Joli Mardi - Menu & menu mobile   ----------------- */
+
+/* Règles communes au menu mobile et topbar */
+.menu {
+    line-height: 1.2;
+    transition: all 0.15s ease-out;
+    padding: 0 0;
+
+    a {
+        color: var(--black-title);
+        display: inline-block;
+        padding: 31px 18px 31px;
+        position: relative;
+        transition: all 0.15s ease-out;
+        font-weight: 400;
+        letter-spacing: 0.1ch;
+        font-size: var(--sm-fs);
+        text-decoration: none !important;
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 0px;
+            right: 0px;
+            bottom: 20px;
+            height: 2px;
+            background: var(--accent);
+            margin: auto;
+            opacity: 0;
+            transition: .2s;
+            display: block;
+            width: 0;
+        }
+
+        &.is-active:after {
+            opacity: 1;
+            width: calc(100% - 36px);
+            background: var(--accent) !important;
+        }
+
+        &.is-active {
+            color: var(--accent) !important;
+            cursor: default;
+        }
+
+        &:hover {
+            color: var(--accent);
+        }
+    }
+
+    &, ul, li {
+        list-style: none;
+        margin: 0;
+    }
+}
+.topbar .menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+}
+
+.mobile-menu {
+    position: fixed;
+    right: -110%;
+    background: #fff;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.15s ease-out;
+    z-index: 200;
+    box-sizing: border-box;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+    width: 340px;
+    max-width: 90%;
+    font-size: var(--sm-fs);
+
+
+    .mobile-menu-logo {
+        max-width: 100%;
+        padding: 10px 0;
+        display: block;
+        margin-top: 9px;
+        width: 210px;
+        height: auto;
+    }
+
+    .mobile-menu-container {
+
+        a:not(.btn) {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 600;
+            width: 100%;
+            color: #000;
+            margin: 0;
+            padding: 20px 0;
+            border: none;
+            letter-spacing: 0.02ch;
+            font-size: var(--sm-fs);
+            transition: all 0.15s ease-out;
+            line-height: 1.2;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+
+            &.active {
+                color: var(--accent);
+            }
+
+            /*&:after {
+                display: none;
+            }*/
+        }
+    }
+    .menu-logged-in, .menu-logged-out {
+        .btn {
+            width: 100%;
+            margin-top: 12px;
+            margin-bottom: 1em;
+        }
+    }
+    .menu-logged-out {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+    .menu-logged-in {
+        border-bottom: 1px solid var(--gray-border);
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+
+        a {
+            display: flex;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 16px 0;
+            .icon {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+.mobile-menu-opened .mobile-menu {
+    right: 0;
+}
+
+.menu-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: opacity .2s;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 102;
+}
+.mobile-menu-opened {
+    .menu-overlay {
+        opacity: 1;
+        width: 100%;
+        pointer-events: auto;
+    }
+}
+
+.menu-bars {
+    color: var(--black-title);
+    font-size: var(--sm-fs);
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 0 8px;
+    display: none;
+    position: relative;
+    z-index: 101;
+    transition: all .2s ease-out;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    line-height: 15px;
+
+    .icon {
+        font-size: 22px;
+        margin-left: 7px;
+    }
+    span {
+        position: relative;
+        top: -1px;
+    }
+}
+.menu-close {
+    color: var(--black-title);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px 24px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    box-sizing: content-box;
+
+    img {
+        height: 32px;
+        width: auto;
+    }
+}
+
+
+/* ---- Menu mobile breakpoint ---- */
+@media(max-width: 1080px) {
+
+    .topbar .menu,
+    .topbar .topbar-right {
+        display: none;
+    }
+    .topbar .menu-bars {
+        display: flex;
+    }
+    .topbar .logo {
+        min-width: 0;
+        flex-grow: 1;
+    }
+
+    main {
+        padding-top: 60px;
+    }
+
+}

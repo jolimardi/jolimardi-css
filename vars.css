@@ -3,6 +3,8 @@
 */
 
 :root {
+    /* A changer en responsive si la topbar change de hauteur */
+    --topbar-height: 63px;
 
     --font-family: "Outfit", sans-serif;
     --font-family-alt: var(--font-family);
