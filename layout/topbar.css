@@ -8,7 +8,7 @@
 
 .topbar {
     background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--gray-border);
     position: fixed;
     top: 0;
     left: 0;
@@ -40,6 +40,9 @@ a.logo {
     outline: none;
     transition: all 0.15s ease-out;
     flex-grow: 1;
+    font-weight: var(--fw-extrabold);
+    color: var(--black-title);
+    text-decoration: none;
 
     img {
         width: 160px;

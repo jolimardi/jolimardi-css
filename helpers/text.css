@@ -38,6 +38,13 @@
         color: var(--gray-text);
     }
 }
+.text-gradient{
+    background-clip: text;
+    /*-webkit-background-clip: text;*/
+    -webkit-text-fill-color: transparent;
+    background-image: var(--gradient);
+}
+
 
 /* Font-weights */
 

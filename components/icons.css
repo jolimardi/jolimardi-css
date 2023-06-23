@@ -1,0 +1,12 @@
+.icon {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: -0.125em;
+    width: 1em;
+    height: auto;
+    box-sizing: content-box;
+    
+    &, svg {
+        fill: currentColor;
+    }
+}

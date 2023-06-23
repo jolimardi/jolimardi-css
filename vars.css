@@ -4,7 +4,7 @@
 
 :root {
     /* A changer en responsive si la topbar change de hauteur */
-    --topbar-height: 63px;
+    --topbar-height: 74px;
 
     --font-family: "Outfit", sans-serif;
     --font-family-alt: var(--font-family);
@@ -105,7 +105,7 @@
 
     --light-gray: #F4F6FA;
     --light-gray-alt: #E6EAEF; /* Darker gray to separate sections */
-    --gray-border: #EFF2F8;
+    --gray-border: rgba(99, 123, 171, 0.1);
     --gray-text: #95aaca;
 
     --red: #ef4444;

@@ -1,0 +1,112 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Display */
+
+.flex {
+    display: flex !important;
+}
+.inline {
+    display: inline !important;
+}
+.inline-block {
+    display: inline-block !important;
+}
+.inline-flex {
+    display: inline-flex !important;
+}
+.block {
+    display: block !important;
+}
+
+
+/* Flex extended */
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-items: center;
+}
+.justify-start {
+    justify-items: start;
+}
+.justify-end {
+    justify-items: end;
+}
+.justify-stretch {
+    justify-items: stretch;
+}
+
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.align-end {
+    align-items: end;
+}
+.stretch, .align-stretch {
+    align-items: stretch;
+}
+
+.flex-fill {
+    flex: 1 1 auto !important;
+}
+.grow, .flex-grow {
+    flex-grow: 1;
+}
+.wrap, .flex-wrap {
+    flex-wrap: wrap;
+}
+.gap, .flex-gap{
+    gap: 2px 16px;
+}
+
+
+
+
+/* Positions */
+.relative, .position-relative {
+    position: relative;
+}
+.absolute, .position-absolute {
+    position: absolute;
+}
+.position-initial {
+    position: initial;
+}
+
+/* Overflows */
+
+.oh, .overflow-hidden{
+    overflow: hidden;
+}
+.overflow-x{
+    overflow-x: auto;
+}
+.overflow-y{
+    overflow-y: auto;
+}
+
+/* Object fit */
+.cover, .object-fit-cover{
+    object-fit: cover;
+}
+.contain, .object-fit-contain{
+    object-fit: contain;
+}

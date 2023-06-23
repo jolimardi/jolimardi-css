@@ -9,7 +9,7 @@
     a {
         color: var(--black-title);
         display: inline-block;
-        padding: 31px 18px 31px;
+        padding: 29px 18px 27px;
         position: relative;
         transition: all 0.15s ease-out;
         font-weight: 400;
@@ -53,6 +53,13 @@
         margin: 0;
     }
 }
+
+/* Small topbar when scrolled <body class="topbar-small"> */
+.topbar-small .menu a {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
 .topbar .menu {
     flex-grow: 1;
     display: flex;
@@ -189,7 +196,7 @@
     line-height: 15px;
 
     .icon {
-        font-size: 22px;
+        font-size: 24px;
         margin-left: 7px;
     }
     span {
