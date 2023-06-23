@@ -1,0 +1,55 @@
+/* ----------    Joli Mardi - Spacings  ------------- */
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.no-mt, .no-margin-top {
+    margin-top: 0 !important;
+}
+.no-mb, .no-margin-bottom {
+    margin-bottom: 0 !important;
+}
+.no-my {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.no-mx {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.mt{
+    margin-top: 16px;
+}
+.mb{
+    margin-bottom: 16px;
+}
+
+
+.no-p, .no-padding {
+    padding: 0 !important;
+}
+.no-pt, .no-padding-top {
+    padding-top: 0 !important;
+}
+.no-pb, .no-padding-bottom {
+    padding-bottom: 0 !important;
+}
+.no-px {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.no-py {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.pt{
+    padding-top: 16px;
+}
+.pb{
+    padding-bottom: 16px;
+}
