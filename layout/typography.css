@@ -9,16 +9,6 @@ body{
     color: var(--black-alt);
     font-weight: var(--fw);
     line-height: var(--lh);
-
-    /* A bouger ailleurs après */
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    min-width: 340px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
 }
 
 

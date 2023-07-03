@@ -1,0 +1,64 @@
+/* 3 colonnes par défaut */
+.listing {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 21px;
+}
+.listing-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+.listing-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    overflow: hidden;
+    position: relative;
+    display: block;
+    transition: .25s;
+    background: #fff;
+
+    .thumbnail {
+        background-color: var(--gray-text);
+        background-size: 100%;
+        transition: 0.25s;
+    }
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: .9em 1.2em 1.2em;
+    font-size: var(--sm-fs);
+    line-height: var(--sm-lh);
+
+    & > *:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .title{
+        font-weight: var(--fw-bold);
+    }
+}
+
+
+a.card {
+    cursor: pointer;
+    &:hover {
+        box-shadow: 2px 7px 18px 0px rgba(0, 0, 0, 0.13);
+        .thumbnail {
+            background-size: 105%;
+        }
+    }
+}
+
+a.card, .card a {
+    text-decoration: none;
+    color: var(--black-title);
+}

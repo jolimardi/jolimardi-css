@@ -1,5 +1,6 @@
 @import "vars.css";
 
+@import 'layout/global.css';
 @import 'layout/max-width.css';
 @import 'layout/sections.css';
 @import 'layout/typography.css';
@@ -8,6 +9,7 @@
 
 @import 'components/separators.css';
 @import 'components/icons.css';
+@import 'components/cards.css';
 
 @import 'helpers/text.css';
 @import 'helpers/display-positions.css';
