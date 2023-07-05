@@ -15,11 +15,11 @@
     --lh: 1.6;
 
     /* small font */
-    --sm-fs: 14.5px;
+    --sm-fs: 15px;
     --sm-lh: 1.45;
     
     /* xsmall font */
-    --xs-fs: 12px;
+    --xs-fs: 13.5px;
     --xs-lh: 1.32;
     
     /* titles */
@@ -143,14 +143,14 @@
 */
 
 :root{
-    --btn-font-size: calc(var(--sm-fs) - 1px);
+    --btn-font-size: var(--sm-fs);
     --btn-font-weight: 500;
     --btn-line-height: 1.2;
-    --btn-letter-spacing: 0.05ch;
+    --btn-letter-spacing: 0.8px;
     --btn-word-spacing: 0.8px;
     --btn-radius: 60px;
-    --btn-padding: 14px 25px;
-    --btn-min-width: 150px;
+    --btn-padding: 13px 25px;
+    --btn-min-width: 120px;
 
     --btn-primary: var(--accent);
     --btn-primary-text: var(--white);

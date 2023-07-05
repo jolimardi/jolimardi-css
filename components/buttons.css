@@ -1,0 +1,43 @@
+/* -------------   Buttons   ------------ */
+
+.btn {
+    text-decoration: none;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    font-size: var(--btn-font-size);
+    letter-spacing: var(--btn-letter-spacing);
+    font-weight: var(--btn-font-weight);
+    word-spacing: var(--btn-word-spacing);
+    text-align: center;
+    min-width: var(--btn-min-width);
+    max-width: 100%;
+    box-sizing: border-box;
+
+
+    box-shadow: rgba(105, 77, 255, 0.15) 0px 0px 0px 0px;
+    transition: .10s;
+
+    &:hover {
+        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 4px;
+    }
+}
+
+.btn-primary {
+    background: var(--btn-primary);
+    color: var(--btn-primary-text);
+}
+
+.btn-secondary {
+    background: var(--btn-secondary);
+    color: var(--btn-secondary-text);
+}
+
+.btn-gradient {
+    color: #fff;
+    background: linear-gradient(99deg, rgb(7, 136, 255) 0%, rgb(115, 0, 255) 100%);
+    background-size: 160%;
+
+    &:hover {
+        background-size: 260%;
+    }
+}
