@@ -7,6 +7,10 @@
 @import 'layout/topbar.css';
 @import 'layout/menu.css';
 
+@import 'forms/reset.css';
+@import 'forms/form.css';
+@import 'forms/inputs.css';
+
 @import 'components/separators.css';
 @import 'components/icons.css';
 @import 'components/cards.css';

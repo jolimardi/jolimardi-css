@@ -1,0 +1,43 @@
+input, select, textarea {
+    padding: 14px 13px 14px;
+}
+select, input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="textfield"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+textarea {
+    /* background-color: #fff; */
+    transition: all 0.1s ease-out;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 6px 0 0px;
+    display: block;
+    border: 1px solid var(--gray-border);
+    border-radius: 8px;
+
+
+    font-weight: var(--fw);
+    color: var(--black);
+    letter-spacing: 0.2px;
+
+    /* font-size: var(--font-size-x-small); */
+
+    box-shadow: rgba(105, 77, 255, 0.15) 0px 0px 0px 0px;
+
+    &:focus {
+        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
+        outline: none;
+    }
+
+    &::placeholder {
+        color: var(--gray-text);
+        font-weight: 400;
+        opacity: 0.8;
+        font-style: italic;
+    }
+}

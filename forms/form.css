@@ -1,0 +1,25 @@
+form, .form {
+    font-size: var(--sm-fs);
+    position: relative;
+    margin: 1.6em auto 0;
+}
+
+
+.label{
+    display: block;
+    cursor: pointer;
+    letter-spacing: 0px;
+    margin: 32px 0 8px 12px;
+    font-weight: var(--fw-semibold);
+    color: var(--black-title);
+}
+.input:first-of-type > .label{
+    margin-top: 8px;
+}
+
+/* Aide sous un champ */
+.form-text {
+    margin-top: .25rem;
+    font-size: .875em;
+    color: var(--gray-text);
+}

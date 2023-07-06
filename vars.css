@@ -15,7 +15,7 @@
     --lh: 1.6;
 
     /* small font */
-    --sm-fs: 15px;
+    --sm-fs: 15.5px;
     --sm-lh: 1.45;
     
     /* xsmall font */
@@ -149,7 +149,7 @@
     --btn-letter-spacing: 0.8px;
     --btn-word-spacing: 0.8px;
     --btn-radius: 60px;
-    --btn-padding: 13px 25px;
+    --btn-padding: 11px 25px;
     --btn-min-width: 120px;
 
     --btn-primary: var(--accent);
