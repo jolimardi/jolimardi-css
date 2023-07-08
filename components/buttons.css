@@ -41,3 +41,11 @@
         background-size: 260%;
     }
 }
+
+
+.btns{
+    margin-top: 1.6em;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
