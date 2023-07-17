@@ -39,16 +39,16 @@
 }
 
 .justify-center {
-    justify-items: center;
+    justify-content: center;
 }
 .justify-start {
-    justify-items: start;
+    justify-content: start;
 }
 .justify-end {
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 .justify-stretch {
-    justify-items: stretch;
+    justify-content: stretch;
 }
 
 .align-center {
