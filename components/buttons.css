@@ -12,6 +12,7 @@
     min-width: var(--btn-min-width);
     max-width: 100%;
     box-sizing: border-box;
+    cursor: pointer;
 
 
     box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
@@ -30,6 +31,7 @@
 .btn-secondary {
     background: var(--btn-secondary);
     color: var(--btn-secondary-text);
+
     &:hover {
         box-shadow: none;
         filter: brightness(90%);
@@ -49,7 +51,7 @@
 }
 
 
-.btns{
+.btns {
     margin-top: 2.4em;
     display: flex;
     align-items: flex-start;
