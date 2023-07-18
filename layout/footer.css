@@ -1,0 +1,23 @@
+/* ------------------   Joli Mardi - Footer   ----------------- */
+
+
+.footer {
+    background: var(--footer-bg);
+
+    &, a, p {
+        font-size: var(--sm-fs);
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .logo{
+        font-size: var(--h3);
+        text-decoration: none !important;
+    }
+}
