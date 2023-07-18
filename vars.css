@@ -113,7 +113,7 @@
     --light-gray: #F4F6FA;
     --light-gray-alt: #E6EAEF;
     /* Darker gray to separate sections */
-    --gray-border: rgba(99, 123, 171, 0.1);
+    --gray-border: rgba(99, 123, 171, 0.2);
     --gray-text: #95aaca;
 
     --red: #ef4444;
