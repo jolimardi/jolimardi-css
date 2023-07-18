@@ -112,6 +112,12 @@
 }
 
 
+/* Hide */
+
+.hide, .hidden{
+    display: none;
+}
+
 /* Hide for mobile */
 
 @media(max-width: 1080px) {

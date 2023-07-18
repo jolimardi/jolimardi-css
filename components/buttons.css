@@ -30,6 +30,10 @@
 .btn-secondary {
     background: var(--btn-secondary);
     color: var(--btn-secondary-text);
+    &:hover {
+        box-shadow: none;
+        filter: brightness(90%);
+    }
 }
 
 .btn-gradient {
@@ -46,7 +50,7 @@
 
 
 .btns{
-    margin-top: 1.6em;
+    margin-top: 2.4em;
     display: flex;
     align-items: flex-start;
     gap: 1em;
