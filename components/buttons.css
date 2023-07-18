@@ -14,11 +14,11 @@
     box-sizing: border-box;
 
 
-    box-shadow: rgba(105, 77, 255, 0.15) 0px 0px 0px 0px;
-    transition: .10s;
+    box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
+    transition: .15s;
 
     &:hover {
-        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 4px;
+        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 }
 
@@ -34,11 +34,13 @@
 
 .btn-gradient {
     color: #fff;
-    background: linear-gradient(99deg, rgb(7, 136, 255) 0%, rgb(115, 0, 255) 100%);
-    background-size: 160%;
+    background: var(--gradient-btn);
+    background-size: 120%;
+    background-position-x: center;
 
     &:hover {
-        background-size: 260%;
+        background-size: 160%;
+        background-position-x: 0;
     }
 }
 

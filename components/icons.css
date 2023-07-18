@@ -7,6 +7,6 @@
     box-sizing: content-box;
     
     &, svg {
-        fill: currentColor;
+        /*fill: currentColor;*/ /* Pas besoin avec les icones coolicons */
     }
 }

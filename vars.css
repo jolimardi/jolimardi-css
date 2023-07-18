@@ -124,14 +124,14 @@
     --gradient-left: #2D00E0;
     --gradient-middle: #3412FF;
     --gradient-right: #9E00FF;
-    --gradient-angle: 94deg;
+    --gradient-angle: 120deg;
 
     --gradient: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 50%, var(--gradient-right) 100%);
 
-    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-middle) 0%, var(--gradient-left) 50%, var(--gradient-middle) 75%, var(--gradient-right) 100%); /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
+    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 65%, var(--gradient-right) 100%); /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
 
 
-    --gradient-section: linear-gradient(94deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
+    --gradient-section: linear-gradient(114deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
     
 }
 
