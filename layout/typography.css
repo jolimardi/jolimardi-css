@@ -87,7 +87,7 @@ h4, .h4 {
 }
 
 h5, .h5, .subheading {
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-bold);
     font-size: var(--sm-fs);
     line-height: var(--h5-lh);
     text-transform: uppercase;
