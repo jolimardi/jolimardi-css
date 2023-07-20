@@ -13,6 +13,7 @@
     max-width: 100%;
     box-sizing: border-box;
     cursor: pointer;
+    display: inline-block;
 
 
     box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
@@ -50,6 +51,18 @@
     }
 }
 
+
+.btn-link{
+    padding-left: 0;
+    padding-right: 0;
+    background: none !important;
+    box-shadow: none !important;
+    color: var(--black-title);
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
 
 .btns {
     margin-top: 2.4em;
