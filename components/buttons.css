@@ -58,6 +58,7 @@
     background: none !important;
     box-shadow: none !important;
     color: var(--black-title);
+    font-weight: var(--fw-bold);
 
     &:hover{
         text-decoration: underline;

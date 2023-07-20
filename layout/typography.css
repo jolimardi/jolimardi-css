@@ -76,6 +76,7 @@ h3, .h3 {
     margin-bottom: 0.8em;
     color: var(--black-title);
     letter-spacing: 0.01ch;
+    font-weight: var(--fw-bold);
 }
 
 h4, .h4 {
@@ -99,4 +100,10 @@ h5, .h5, .subheading {
     & + h1, & + h2 {
         margin-top: var(--fs);
     }
+}
+
+
+
+strong{
+    font-weight: var(--fw-bold);
 }
