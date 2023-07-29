@@ -51,6 +51,10 @@
     }
 }
 
+.btn-large{
+    width: 100%;
+}
+
 
 .btn-link{
     padding-left: 0;
