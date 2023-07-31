@@ -4,19 +4,21 @@
 .footer {
     background: var(--footer-bg);
 
-    &, a, p {
+    &,
+    a,
+    p {
         font-size: var(--sm-fs);
     }
 
     a {
         text-decoration: none;
 
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
 
-    .logo{
+    .logo {
         font-size: var(--h3);
         text-decoration: none !important;
     }
