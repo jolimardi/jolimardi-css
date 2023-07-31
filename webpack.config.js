@@ -17,7 +17,6 @@ const normalConfig = {
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
-                                sourceMap: false,
                                 plugins: [
                                     require('postcss-import')(),
                                     require('postcss-custom-properties')(),
@@ -52,7 +51,6 @@ const scopedConfig = {
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
-                                sourceMap: false,
                                 plugins: [
                                     require('postcss-import')(),
                                     require('postcss-scopify')('.html-preview'),
