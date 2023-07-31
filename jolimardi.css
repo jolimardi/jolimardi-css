@@ -11,6 +11,7 @@
 @import 'forms/reset.css';
 @import 'forms/form.css';
 @import 'forms/inputs.css';
+@import 'forms/selectize.css';
 
 @import 'components/separators.css';
 @import 'components/icons.css';

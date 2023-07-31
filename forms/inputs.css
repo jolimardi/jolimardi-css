@@ -53,7 +53,7 @@ textarea {
 
 
 
-/* ---------   Switches   ------------ */
+/* ---------   Checkboxes   ------------ */
 
 .checkbox-item {
     display: block;
@@ -66,6 +66,7 @@ textarea {
     .checkbox {
         width: 1.2em;
         height: 1.2em;
+        cursor: pointer;
 
         &:focus {
             box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
@@ -78,6 +79,9 @@ textarea {
         }
     }
 }
+
+
+/* ---------   Switches checkboxes (.is-switch)   ------------ */
 
 .checkbox-item.is-switch {
     padding-left: 2.5em;

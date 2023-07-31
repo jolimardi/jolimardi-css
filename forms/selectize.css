@@ -1,0 +1,121 @@
+/* Selectize overrides */
+/* Body sert juste à ne pas mettre !important partout */
+body {
+
+    /* Border-radius, padding */
+    .selectize-input {
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 14px 8px 14px;
+        box-shadow: none !important;
+    }
+    .selectize-input.dropdown-active {
+        border-radius: 8px 8px 0 0;
+    }
+    /* Version bords ronds */
+    .pill {
+        .selectize-input {
+            border-radius: 50px;
+            padding: 14px 16px 14px;
+        }
+        .selectize-input.dropdown-active {
+            border-radius: 24px 24px 0 0;
+        }
+    }
+    .plugin-clear_button .selectize-input > .item,
+    .selectize-input > input[placeholder] {
+        padding-right: 35px;
+        max-width: calc(100% - 4px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: bottom;
+    }
+    .selectize-input > input[placeholder] {
+        padding-right: 10px !important;
+        &::placeholder {
+            color: #a4abb8;
+            opacity: 1;
+        }
+    }
+
+
+
+    /* Font size */
+    .selectize-dropdown, .selectize-input, .selectize-input input {
+        font-size: var(--sm-fs);
+        line-height: 1.4;
+        letter-spacing: 0;
+        color: var(--black-title);
+    }
+
+
+    /* Couleur selected */
+    .selectize-dropdown .selected {
+        background-color: var(--gray-text);
+        color: #fff;
+    }
+    .selectize-dropdown .option {
+        transition: .15s;
+    }
+
+
+    /* Bug placeholders (dernière lettre crop au premier chargement car font pas encore chargée) */
+    .selectize-input > input[placeholder] {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+
+    /* Espacement entre les <option> */
+    .selectize-dropdown .create, .selectize-dropdown .no-results, .selectize-dropdown .optgroup-header, .selectize-dropdown .option {
+        padding: 0.5em 8px;
+    }
+
+
+
+
+
+    /* Croix pour clear la valeur */
+    .selectize-control.plugin-clear_button .clear {
+        font-weight: 300;
+    }
+
+
+    /* Choix multiples avec croix */
+    .selectize-control.multi .selectize-input {
+        transition: border-radius .15s;
+        margin-top: 8px;
+    }
+    /*.selectize-control.multi .selectize-input.has-items{
+        border-radius: 24px;
+        padding-left: 7px;
+        padding-right: 6px;
+    }*/
+    .selectize-control.multi .selectize-input [data-value] {
+        border-radius: 50px;
+        border: none !important;
+        background: var(--gray-text) !important;
+        color: #fff;
+        padding: 5px 12px;
+        transition: 0.15s;
+        margin-right: 5px;
+        margin-bottom: 4px;
+        font-size: var(--sm-fs);
+        &:hover {
+            background: var(--accent-dark);
+        }
+    }
+    .selectize-control.plugin-remove_button .item .remove {
+        border-left: 0;
+        padding-right: 9px;
+        transition: 0.15s;
+        transform: scale(1);
+        background: transparent !important;
+        font-size: 18px;
+        line-height: 1;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
