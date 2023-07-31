@@ -36,11 +36,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     /* small font */
     --sm-fs: 15.5px;
     --sm-lh: 1.45;
-    
+
     /* xsmall font */
     --xs-fs: 13.5px;
     --xs-lh: 1.32;
-    
+
     /* titles */
     --h1: 58px;
     --h1-lh: 1.08;
@@ -59,7 +59,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     --fw-bold: 600;
     --fw-extrabold: 700;
 
-    --fw-light: 400; /* No 300 for this site */
+    --fw-light: 400;
+    /* No 300 for this site */
 }
 
 @media(max-width: 1560px) {
@@ -112,50 +113,59 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 // ---------    Colors -----------
 */
 
-:root{
-    --black: #131A28; /* Text black */
-    --black-alt: #304164; /* Lighter black for secondary text */
+:root {
+    --black: #131A28;
+    /* Text black */
+    --black-alt: #304164;
+    /* Lighter black for secondary text */
     --black-title: #000;
     --white: #fff;
     --blue: #4D20FF;
-    --accent: var(--blue); /* Links, text on white backgrounds */
-    --accent-alt: var(--accent); /* Accent as background : buttons backgrounds etc. */
-    --accent-dark: #2b0aaf; /* Buttons hover (darker --accent-alt) */
+    --accent: var(--blue);
+    /* Links, text on white backgrounds */
+    --accent-alt: var(--accent);
+    /* Accent as background : buttons backgrounds etc. */
+    --accent-dark: #2b0aaf;
+    /* Buttons hover (darker --accent-alt) */
 
     --light-gray: #F4F6FA;
-    --light-gray-alt: #E6EAEF; /* Darker gray to separate sections */
-    --gray-border: rgba(99, 123, 171, 0.1);
+    --light-gray-alt: #E6EAEF;
+    /* Darker gray to separate sections */
+    --gray-border: rgba(99, 123, 171, 0.2);
     --gray-text: #95aaca;
 
     --red: #ef4444;
     --orange: #f18e36;
     --green: #35be8a;
+
+    --footer-bg: #233851;
 }
 
 /* 
 // ---------    Gradients -----------
 */
 
-:root{
+:root {
     --gradient-left: #2D00E0;
     --gradient-middle: #3412FF;
     --gradient-right: #9E00FF;
-    --gradient-angle: 94deg;
+    --gradient-angle: 120deg;
 
     --gradient: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 50%, var(--gradient-right) 100%);
 
-    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-middle) 0%, var(--gradient-left) 50%, var(--gradient-middle) 75%, var(--gradient-right) 100%); /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
+    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 65%, var(--gradient-right) 100%);
+    /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
 
 
-    --gradient-section: linear-gradient(94deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
-    
+    --gradient-section: linear-gradient(114deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
+
 }
 
 /* 
 // ---------    Buttons -----------
 */
 
-:root{
+:root {
     --btn-font-size: var(--sm-fs);
     --btn-font-weight: 500;
     --btn-line-height: 1.2;
@@ -169,18 +179,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     --btn-primary-text: var(--white);
 
     --btn-secondary: var(--light-gray-alt);
-    --btn-secondary-text: var(--white);
-    
+    --btn-secondary-text: var(--black-title);
+
 }
 
 /* 
 // ---------    Max Widths -----------
 */
 
-:root{
+:root {
     --max-width: 95ch;
     --max-width-small: 78ch;
     --max-width-large: 130ch;
+
+    /* left and right margin from side of viewport (max-width x padding) */
+    --gutter: 32px;
+}
+
+@media(max-width: 460px) {
+    :root {
+        --gutter: 16px;
+    }
 }
 
 /* -----------   Joli Mardi Layout base ----------------- */
@@ -210,7 +229,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding-left: 32px;
+    padding-left: var(--gutter);
     padding-right: 32px;
+    padding-right: var(--gutter);
     flex-grow: 1;
 }
 
@@ -231,15 +252,6 @@ body{
 
 .centered {
     text-align: center;
-}
-
-@media(max-width: 460px) {
-    .max-width,
-    .max-width-small,
-    .max-width-large {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 }
 
 /* ------------------   Joli Mardi - Sections   ----------------- */
@@ -287,9 +299,10 @@ body{
         align-items: center;
     }
 
-:is(.section > h1,.section > .h1,.section > h2,.section > .h2):first-child {
-            padding-top: 0;
-        }
+:is(:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > h1,:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > .h1,:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > h2,:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > .h2,:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > h3,:is(.section,.section .max-width,.section .max-width-small,.section .max-width-large) > .h3):first-child {
+                padding-top: 0;
+                margin-top: 0;
+            }
 
 @media(max-width: 1000px) {
     .section {
@@ -395,6 +408,8 @@ h3, .h3 {
     color: #000;
     color: var(--black-title);
     letter-spacing: 0.01ch;
+    font-weight: 600;
+    font-weight: var(--fw-bold);
 }
 
 h4, .h4 {
@@ -402,6 +417,8 @@ h4, .h4 {
     font-size: var(--h4);
     line-height: 1.4;
     line-height: var(--h4-lh);
+    font-weight: 600;
+    font-weight: var(--fw-bold);
     margin-top: 0.5em;
     letter-spacing: 0.02ch;
     padding-bottom: 8px;
@@ -425,6 +442,11 @@ h5, .h5, .subheading {
         margin-top: var(--fs);
     }
 
+strong{
+    font-weight: 600;
+    font-weight: var(--fw-bold);
+}
+
 /* ------------------   Joli Mardi - Topbar   ----------------- */
 
 .main {
@@ -436,7 +458,6 @@ h5, .h5, .subheading {
 .topbar {
     background: #fff;
     border-bottom: 1px solid rgba(99, 123, 171, 0.1);
-    border-bottom: 1px solid var(--gray-border);
     position: fixed;
     top: 0;
     left: 0;
@@ -630,7 +651,7 @@ a.logo img {
     }
 
 .mobile-menu .menu-logged-in {
-        border-bottom: 1px solid rgba(99, 123, 171, 0.1);
+        border-bottom: 1px solid rgba(99, 123, 171, 0.2);
         border-bottom: 1px solid var(--gray-border);
         padding-bottom: 1em;
         margin-bottom: 1em;
@@ -743,6 +764,32 @@ a.logo img {
 
 }
 
+/* ------------------   Joli Mardi - Footer   ----------------- */
+
+.footer {
+    background: #233851;
+    background: var(--footer-bg);
+}
+
+.footer, .footer a, .footer p {
+        font-size: 15.5px;
+        font-size: var(--sm-fs);
+    }
+
+.footer a {
+        text-decoration: none;
+    }
+
+.footer a:hover{
+            text-decoration: underline;
+        }
+
+.footer .logo{
+        font-size: 28px;
+        font-size: var(--h3);
+        text-decoration: none !important;
+    }
+
 button, html input[type="button"], input[type="reset"], input[type="submit"]{
     appearance: normal;
     border: none;
@@ -809,7 +856,7 @@ textarea {
     width: 100%;
     margin: 6px 0 0px;
     display: block;
-    border: 1px solid rgba(99, 123, 171, 0.1);
+    border: 1px solid rgba(99, 123, 171, 0.2);
     border: 1px solid var(--gray-border);
     border-radius: 8px;
 
@@ -833,16 +880,24 @@ textarea {
     }
 
 :is(select,input[type="text"],input[type="email"],input[type="number"],input[type="tel"],input[type="textfield"],input[type="password"],input[type="date"],input[type="time"],textarea)::placeholder {
+        font: inherit;
         color: #95aaca;
         color: var(--gray-text);
         font-weight: 400;
-        opacity: 0.8;
-        font-style: italic;
+        font-weight: var(--fw);
+        opacity: 1;
+        /* font-style: italic; */
+    }
+
+.input-group .inline {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px 16px;
     }
 
 hr{
     border: none;
-    border-bottom: 1px solid rgba(99, 123, 171, 0.1);
+    border-bottom: 1px solid rgba(99, 123, 171, 0.2);
     border-bottom: 1px solid var(--gray-border);
     width: 100%;
     margin: 2em auto;
@@ -861,7 +916,7 @@ hr{
         content: "";
         height: 1px;
         width: 100%;
-        background: rgba(99, 123, 171, 0.1);
+        background: rgba(99, 123, 171, 0.2);
         background: var(--gray-border);
         flex-basis: 1;
     }
@@ -876,7 +931,7 @@ hr{
 }
 
 .icon, .icon svg {
-        fill: currentColor;
+        /*fill: currentColor;*/ /* Pas besoin avec les icones coolicons */
     }
 
 /* 3 colonnes par défaut */
@@ -976,14 +1031,16 @@ a.card, .card a {
     min-width: var(--btn-min-width);
     max-width: 100%;
     box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
 
 
-    box-shadow: rgba(105, 77, 255, 0.15) 0px 0px 0px 0px;
-    transition: .10s;
+    box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
+    transition: .15s;
 }
 
 .btn:hover {
-        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 4px;
+        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 
 .btn-primary {
@@ -996,22 +1053,49 @@ a.card, .card a {
 .btn-secondary {
     background: #E6EAEF;
     background: var(--btn-secondary);
-    color: #fff;
+    color: #000;
     color: var(--btn-secondary-text);
 }
 
+.btn-secondary:hover {
+        box-shadow: none;
+        filter: brightness(90%);
+    }
+
 .btn-gradient {
     color: #fff;
-    background: linear-gradient(99deg, rgb(7, 136, 255) 0%, rgb(115, 0, 255) 100%);
-    background-size: 160%;
+    background: linear-gradient(120deg, #2D00E0 0%, #3412FF 65%, #9E00FF 100%);
+    background: var(--gradient-btn);
+    background-size: 120%;
+    background-position-x: center;
 }
 
 .btn-gradient:hover {
-        background-size: 260%;
+        background-size: 160%;
+        background-position-x: 0;
     }
 
-.btns{
-    margin-top: 1.6em;
+.btn-large{
+    width: 100%;
+}
+
+.btn-link{
+    padding-left: 0;
+    padding-right: 0;
+    background: none !important;
+    box-shadow: none !important;
+    color: #000;
+    color: var(--black-title);
+    font-weight: 600;
+    font-weight: var(--fw-bold);
+}
+
+.btn-link:hover{
+        text-decoration: underline;
+    }
+
+.btns {
+    margin-top: 2.4em;
     display: flex;
     align-items: flex-start;
     gap: 1em;
@@ -1026,7 +1110,7 @@ a.card, .card a {
         line-height: var(--sm-lh);
     }
 
-.text-xs, .text-xs * {
+.text-x-small, .text-x-small * {
         font-size: 13.5px;
         font-size: var(--xs-fs);
         line-height: 1.32;
@@ -1059,8 +1143,9 @@ a.card, .card a {
     background-clip: text;
     /*-webkit-background-clip: text;*/
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(94deg, #2D00E0 0%, #3412FF 50%, #9E00FF 100%);
+    background-image: linear-gradient(120deg, #2D00E0 0%, #3412FF 50%, #9E00FF 100%);
     background-image: var(--gradient);
+    display: inline-block;
 }
 
 /* Centering */
@@ -1112,23 +1197,23 @@ a.card, .card a {
 
 /* Display */
 
-.flex {
+.flex, .d-flex {
     display: flex !important;
 }
 
-.inline {
+.d-inline {
     display: inline !important;
 }
 
-.inline-block {
+.d-inline-block {
     display: inline-block !important;
 }
 
-.inline-flex {
+.d-inline-flex {
     display: inline-flex !important;
 }
 
-.block {
+.d-block {
     display: block !important;
 }
 
@@ -1151,19 +1236,19 @@ a.card, .card a {
 }
 
 .justify-center {
-    justify-items: center;
+    justify-content: center;
 }
 
 .justify-start {
-    justify-items: start;
+    justify-content: start;
 }
 
 .justify-end {
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 
 .justify-stretch {
-    justify-items: stretch;
+    justify-content: stretch;
 }
 
 .align-center {
@@ -1234,6 +1319,12 @@ a.card, .card a {
 
 .contain, .object-fit-contain {
     object-fit: contain;
+}
+
+/* Hide */
+
+.hide, .hidden{
+    display: none;
 }
 
 /* Hide for mobile */

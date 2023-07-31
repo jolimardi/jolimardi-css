@@ -36,11 +36,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     /* small font */
     --sm-fs: 15.5px;
     --sm-lh: 1.45;
-    
+
     /* xsmall font */
     --xs-fs: 13.5px;
     --xs-lh: 1.32;
-    
+
     /* titles */
     --h1: 58px;
     --h1-lh: 1.08;
@@ -59,7 +59,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     --fw-bold: 600;
     --fw-extrabold: 700;
 
-    --fw-light: 400; /* No 300 for this site */
+    --fw-light: 400;
+    /* No 300 for this site */
 }
 
 @media(max-width: 1560px) {
@@ -112,50 +113,59 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 // ---------    Colors -----------
 */
 
-.html-preview :root{
-    --black: #131A28; /* Text black */
-    --black-alt: #304164; /* Lighter black for secondary text */
+.html-preview :root {
+    --black: #131A28;
+    /* Text black */
+    --black-alt: #304164;
+    /* Lighter black for secondary text */
     --black-title: #000;
     --white: #fff;
     --blue: #4D20FF;
-    --accent: var(--blue); /* Links, text on white backgrounds */
-    --accent-alt: var(--accent); /* Accent as background : buttons backgrounds etc. */
-    --accent-dark: #2b0aaf; /* Buttons hover (darker --accent-alt) */
+    --accent: var(--blue);
+    /* Links, text on white backgrounds */
+    --accent-alt: var(--accent);
+    /* Accent as background : buttons backgrounds etc. */
+    --accent-dark: #2b0aaf;
+    /* Buttons hover (darker --accent-alt) */
 
     --light-gray: #F4F6FA;
-    --light-gray-alt: #E6EAEF; /* Darker gray to separate sections */
-    --gray-border: rgba(99, 123, 171, 0.1);
+    --light-gray-alt: #E6EAEF;
+    /* Darker gray to separate sections */
+    --gray-border: rgba(99, 123, 171, 0.2);
     --gray-text: #95aaca;
 
     --red: #ef4444;
     --orange: #f18e36;
     --green: #35be8a;
+
+    --footer-bg: #233851;
 }
 
 /* 
 // ---------    Gradients -----------
 */
 
-.html-preview :root{
+.html-preview :root {
     --gradient-left: #2D00E0;
     --gradient-middle: #3412FF;
     --gradient-right: #9E00FF;
-    --gradient-angle: 94deg;
+    --gradient-angle: 120deg;
 
     --gradient: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 50%, var(--gradient-right) 100%);
 
-    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-middle) 0%, var(--gradient-left) 50%, var(--gradient-middle) 75%, var(--gradient-right) 100%); /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
+    --gradient-btn: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 65%, var(--gradient-right) 100%);
+    /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
 
 
-    --gradient-section: linear-gradient(94deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
-    
+    --gradient-section: linear-gradient(114deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
+
 }
 
 /* 
 // ---------    Buttons -----------
 */
 
-.html-preview :root{
+.html-preview :root {
     --btn-font-size: var(--sm-fs);
     --btn-font-weight: 500;
     --btn-line-height: 1.2;
@@ -169,18 +179,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     --btn-primary-text: var(--white);
 
     --btn-secondary: var(--light-gray-alt);
-    --btn-secondary-text: var(--white);
-    
+    --btn-secondary-text: var(--black-title);
+
 }
 
 /* 
 // ---------    Max Widths -----------
 */
 
-.html-preview :root{
+.html-preview :root {
     --max-width: 95ch;
     --max-width-small: 78ch;
     --max-width-large: 130ch;
+
+    /* left and right margin from side of viewport (max-width x padding) */
+    --gutter: 32px;
+}
+
+@media(max-width: 460px) {
+    .html-preview :root {
+        --gutter: 16px;
+    }
 }
 
 /* -----------   Joli Mardi Layout base ----------------- */
@@ -209,8 +228,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 .html-preview .max-width-large {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
     flex-grow: 1;
 }
 
@@ -228,15 +247,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 
 .html-preview .centered {
     text-align: center;
-}
-
-@media(max-width: 460px) {
-    .html-preview .max-width,
-    .html-preview .max-width-small,
-    .html-preview .max-width-large {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
 }
 
 /* ------------------   Joli Mardi - Sections   ----------------- */
@@ -281,9 +291,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
         align-items: center;
     }
 
-:is(.html-preview .section > h1,.html-preview .section > .h1,.html-preview .section > h2,.html-preview .section > .h2):first-child {
-            padding-top: 0;
-        }
+:is(:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > h1,:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > .h1,:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > h2,:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > .h2,:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > h3,:is(.html-preview .section,.html-preview .section .max-width,.html-preview .section .max-width-small,.html-preview .section .max-width-large) > .h3):first-child {
+                padding-top: 0;
+                margin-top: 0;
+            }
 
 @media(max-width: 1000px) {
     .html-preview .section {
@@ -368,11 +379,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     margin-bottom: 0.8em;
     color: var(--black-title);
     letter-spacing: 0.01ch;
+    font-weight: var(--fw-bold);
 }
 
 .html-preview h4, .html-preview .h4 {
     font-size: var(--h4);
     line-height: var(--h4-lh);
+    font-weight: var(--fw-bold);
     margin-top: 0.5em;
     letter-spacing: 0.02ch;
     padding-bottom: 8px;
@@ -392,6 +405,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
         margin-top: var(--fs);
     }
 
+.html-preview strong{
+    font-weight: var(--fw-bold);
+}
+
 /* ------------------   Joli Mardi - Topbar   ----------------- */
 
 .html-preview .main {
@@ -401,7 +418,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 
 .html-preview .topbar {
     background: #fff;
-    border-bottom: 1px solid var(--gray-border);
+    border-bottom: 1px solid rgba(99, 123, 171, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -692,6 +709,29 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 
 }
 
+/* ------------------   Joli Mardi - Footer   ----------------- */
+
+.html-preview .footer {
+    background: var(--footer-bg);
+}
+
+.html-preview .footer, .html-preview .footer a, .html-preview .footer p {
+        font-size: var(--sm-fs);
+    }
+
+.html-preview .footer a {
+        text-decoration: none;
+    }
+
+.html-preview .footer a:hover{
+            text-decoration: underline;
+        }
+
+.html-preview .footer .logo{
+        font-size: var(--h3);
+        text-decoration: none !important;
+    }
+
 .html-preview button, .html-preview html input[type="button"], .html-preview input[type="reset"], .html-preview input[type="submit"]{
     appearance: normal;
     border: none;
@@ -765,10 +805,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     }
 
 :is(.html-preview select,.html-preview input[type="text"],.html-preview input[type="email"],.html-preview input[type="number"],.html-preview input[type="tel"],.html-preview input[type="textfield"],.html-preview input[type="password"],.html-preview input[type="date"],.html-preview input[type="time"],.html-preview textarea)::placeholder {
+        font: inherit;
         color: var(--gray-text);
-        font-weight: 400;
-        opacity: 0.8;
-        font-style: italic;
+        font-weight: var(--fw);
+        opacity: 1;
+        /* font-style: italic; */
+    }
+
+.html-preview .input-group .inline {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px 16px;
     }
 
 .html-preview hr{
@@ -805,7 +852,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 }
 
 .html-preview .icon, .html-preview .icon svg {
-        fill: currentColor;
+        /*fill: currentColor;*/ /* Pas besoin avec les icones coolicons */
     }
 
 /* 3 colonnes par défaut */
@@ -893,14 +940,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     min-width: var(--btn-min-width);
     max-width: 100%;
     box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
 
 
-    box-shadow: rgba(105, 77, 255, 0.15) 0px 0px 0px 0px;
-    transition: .10s;
+    box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
+    transition: .15s;
 }
 
 .html-preview .btn:hover {
-        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 4px;
+        box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 
 .html-preview .btn-primary {
@@ -913,18 +962,42 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     color: var(--btn-secondary-text);
 }
 
+.html-preview .btn-secondary:hover {
+        box-shadow: none;
+        filter: brightness(90%);
+    }
+
 .html-preview .btn-gradient {
     color: #fff;
-    background: linear-gradient(99deg, rgb(7, 136, 255) 0%, rgb(115, 0, 255) 100%);
-    background-size: 160%;
+    background: var(--gradient-btn);
+    background-size: 120%;
+    background-position-x: center;
 }
 
 .html-preview .btn-gradient:hover {
-        background-size: 260%;
+        background-size: 160%;
+        background-position-x: 0;
     }
 
-.html-preview .btns{
-    margin-top: 1.6em;
+.html-preview .btn-large{
+    width: 100%;
+}
+
+.html-preview .btn-link{
+    padding-left: 0;
+    padding-right: 0;
+    background: none !important;
+    box-shadow: none !important;
+    color: var(--black-title);
+    font-weight: var(--fw-bold);
+}
+
+.html-preview .btn-link:hover{
+        text-decoration: underline;
+    }
+
+.html-preview .btns {
+    margin-top: 2.4em;
     display: flex;
     align-items: flex-start;
     gap: 1em;
@@ -937,7 +1010,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
         line-height: var(--sm-lh);
     }
 
-.html-preview .text-xs, .html-preview .text-xs * {
+.html-preview .text-x-small, .html-preview .text-x-small * {
         font-size: var(--xs-fs);
         line-height: var(--xs-lh);
     }
@@ -965,6 +1038,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
     /*-webkit-background-clip: text;*/
     -webkit-text-fill-color: transparent;
     background-image: var(--gradient);
+    display: inline-block;
 }
 
 /* Centering */
@@ -1011,23 +1085,23 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 
 /* Display */
 
-.html-preview .flex {
+.html-preview .flex, .html-preview .d-flex {
     display: flex !important;
 }
 
-.html-preview .inline {
+.html-preview .d-inline {
     display: inline !important;
 }
 
-.html-preview .inline-block {
+.html-preview .d-inline-block {
     display: inline-block !important;
 }
 
-.html-preview .inline-flex {
+.html-preview .d-inline-flex {
     display: inline-flex !important;
 }
 
-.html-preview .block {
+.html-preview .d-block {
     display: block !important;
 }
 
@@ -1050,19 +1124,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 }
 
 .html-preview .justify-center {
-    justify-items: center;
+    justify-content: center;
 }
 
 .html-preview .justify-start {
-    justify-items: start;
+    justify-content: start;
 }
 
 .html-preview .justify-end {
-    justify-items: flex-end;
+    justify-content: flex-end;
 }
 
 .html-preview .justify-stretch {
-    justify-items: stretch;
+    justify-content: stretch;
 }
 
 .html-preview .align-center {
@@ -1133,6 +1207,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/*
 
 .html-preview .contain, .html-preview .object-fit-contain {
     object-fit: contain;
+}
+
+/* Hide */
+
+.html-preview .hide, .html-preview .hidden{
+    display: none;
 }
 
 /* Hide for mobile */
