@@ -42,3 +42,11 @@ textarea {
         /* font-style: italic; */
     }
 }
+
+.input-group {
+    .inline {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+}
