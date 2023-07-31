@@ -71,5 +71,40 @@ const scopedConfig = {
     ],
 };
 
-// Exportez les deux configurations
-module.exports = [normalConfig, scopedConfig];
+
+// Configuration pour le CSS des variables
+const varsConfig = {
+    watch: true,
+    entry: './vars.css',
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    require('postcss-import')(),
+                                    require('postcss-custom-properties')(),
+                                    require('postcss-nesting')(),
+                                ],
+                            },
+                        },
+                    },
+                ],
+            },
+        ],
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'vars-only.css',
+        }),
+    ],
+};
+
+// Exportez les configurations
+module.exports = [normalConfig, scopedConfig, varsConfig];
