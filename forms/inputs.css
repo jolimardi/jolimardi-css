@@ -35,9 +35,18 @@ textarea {
     }
 
     &::placeholder {
+        font: inherit;
         color: var(--gray-text);
-        font-weight: 400;
-        opacity: 0.8;
-        font-style: italic;
+        font-weight: var(--fw);
+        opacity: 1;
+        /* font-style: italic; */
+    }
+}
+
+.input-group {
+    .inline {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px 16px;
     }
 }

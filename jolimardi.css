@@ -6,6 +6,7 @@
 @import 'layout/typography.css';
 @import 'layout/topbar.css';
 @import 'layout/menu.css';
+@import 'layout/footer.css';
 
 @import 'forms/reset.css';
 @import 'forms/form.css';
