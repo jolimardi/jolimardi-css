@@ -5,17 +5,17 @@ form, .form {
 }
 
 
-.label{
+.label {
     display: block;
     letter-spacing: 0px;
     margin: 32px 0 8px 12px;
     font-weight: var(--fw-semibold);
     color: var(--black-title);
 }
-label, .label{
+label, .label {
     cursor: pointer;
 }
-.input:first-of-type > .label{
+.input:first-of-type > .label {
     margin-top: 8px;
 }
 
@@ -24,4 +24,34 @@ label, .label{
     margin-top: .25rem;
     font-size: .875em;
     color: var(--gray-text);
+}
+
+
+
+/* --------  Error, champ invalide ------ */
+
+.is-invalid {
+    .label {
+        color: var(--red);
+    }
+    select, input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="textfield"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    textarea,
+    select {
+        border-color: var(--red);
+        outline: none;
+    }
+}
+.invalid-feedback {
+    color: var(--red);
+    font-weight: var(--fw-semibold);
+    font-size: var(--sm-fs);
+    margin-left: 12px;
+    margin-top: 4px;
 }

@@ -32,6 +32,7 @@ textarea {
     &:focus {
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
         outline: none;
+        border-color: var(--gray-border);
     }
 
     &::placeholder {

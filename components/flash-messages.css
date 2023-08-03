@@ -56,3 +56,6 @@
     height: 36px !important;
     left: 11px !important;
 }
+#NotiflixNotifyOverlay{
+    cursor: pointer;
+}
