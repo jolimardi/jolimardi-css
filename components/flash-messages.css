@@ -1,0 +1,58 @@
+.flash-messages {
+    max-width: 40ch;
+    margin: auto;
+}
+
+.alert {
+    padding: 0.8em 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: var(--light-gray);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    &, p {
+        font-size: var(--sm-fs);
+    }
+    .radios-btns label, .checkboxes-btns label {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.alert-error {
+    background-color: var(--red-bg);
+    border-color: var(--red);
+}
+.alert-success {
+    border-color: var(--green);
+}
+
+.alert-message, .alert-notice {
+    border-color: var(--accent);
+}
+
+
+/* -------------    Overrides Notify  ------------- */
+
+[id^="NotiflixNotifyWrap"]{
+    width: 400px !important;
+}
+[id^="NotiflixNotifyOverlay"]{
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+[id^="NotiflixNotifyWrap"] > div{
+    font-family: var(--font-family) !important;
+    font-size: var(--sm-fs) !important;
+    letter-spacing: 0.6px;
+    border-radius: 8px !important;
+}
+[id^="NotiflixNotifyWrap"] > div.nx-with-icon{
+    min-height: 68px !important;
+}
+[id^="NotiflixNotifyWrap"] > div > span.nx-close-button{
+    right: 11px !important;
+}
+[id^="NotiflixNotifyWrap"] > div > .nx-message-icon{
+    width: 36px !important;
+    height: 36px !important;
+    left: 11px !important;
+}

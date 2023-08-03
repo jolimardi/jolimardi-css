@@ -116,9 +116,10 @@
     --gray-border: rgba(99, 123, 171, 0.2);
     --gray-text: #95aaca;
 
-    --red: #ef4444;
+    --red: #a71c1c;
+    --red-bg: #f8d7da;
     --orange: #f18e36;
-    --green: #35be8a;
+    --green: #16a46e;
 
     --footer-bg: #233851;
 }
