@@ -23,3 +23,45 @@
         text-decoration: none !important;
     }
 }
+
+
+.footer-line {
+    background: var(--footer-bg);
+    display: flex;
+    gap: 0px 32px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px var(--gutter) 10px;
+
+    &, p, a, a:hover {
+        color: rgba(255, 255, 255, .7);
+    }
+
+    p,
+    a {
+        font-weight: var(--fw) !important;
+        font-size: var(--xs-fs);
+        letter-spacing: 0.05ch;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .copyright {
+        cursor: default;
+    }
+}
+
+@media(max-width: 430px) {
+    .footer-line {
+        padding: 8px var(--gutter) 18px;
+
+        .copyright {
+            width: 100%;
+        }
+    }
+}
