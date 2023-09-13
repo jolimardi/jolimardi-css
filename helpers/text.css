@@ -46,6 +46,11 @@
     display: inline-block;
 }
 
+/* Links */
+
+a{
+    color: var(--accent);
+}
 
 /* Centering */
 .centered, .text-center{
