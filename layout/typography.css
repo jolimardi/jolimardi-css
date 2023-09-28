@@ -105,5 +105,5 @@ h5, .h5, .subheading {
 
 
 strong{
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-semibold);
 }

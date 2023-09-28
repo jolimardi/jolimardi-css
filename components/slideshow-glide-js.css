@@ -1,0 +1,76 @@
+
+
+.glide__slide{
+    height: auto !important;
+}
+.glide__slide.no-shadow{
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.0);
+}
+
+
+
+
+
+/*  -------------   Arrows    ------------------------------ */
+/* à utiliser avec :
+
+<div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="|<">{{ svg('icon-chevron-left') }}</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir="|>">{{ svg('icon-chevron-right') }}</button>
+</div>
+
+*/
+
+.glide__arrows{
+    position: absolute;
+    right: 0;
+    top: -36px;
+    display: flex;
+    gap: 0;
+}
+.glide__arrow{
+    background: none;
+    transition: .15s;
+    padding: 2px;
+    font-size: 27px;
+    opacity: 0.35;
+
+    &:hover{
+        color: var(--accent);
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+
+
+
+/*  -----------------   Bullets    -------------------------------- */
+/* A utiliser avec :
+
+<div class="glide__bullets" data-glide-el="controls[nav]">
+    @foreach ($temoignages as $temoignage)
+        <button class="glide__bullet" data-glide-dir="={{ $loop->index }}"></button>
+    @endforeach
+</div>
+
+*/
+
+.glide__bullets {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.glide__bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+    transition: .3s;
+}
+.glide__bullet--active.glide__bullet{
+    opacity: 1;
+    background: var(--accent);
+}
