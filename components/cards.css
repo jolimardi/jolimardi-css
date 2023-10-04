@@ -64,6 +64,9 @@ a.card {
 }
 
 a.card, .card a {
-    text-decoration: none;
-    color: var(--black-title);
+
+    &:not(.btn) {
+        text-decoration: none;
+        color: var(--black-title);
+    }
 }

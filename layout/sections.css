@@ -1,7 +1,7 @@
 /* ------------------   Joli Mardi - Sections   ----------------- */
 
 .section {
-    padding: 3.8em 0px;
+    padding: 2.8em 0px;
 
     &.gray {
         background: var(--light-gray);
@@ -50,6 +50,6 @@
 
 @media(max-width: 1000px) {
     .section {
-        padding: 3.4em 0px;
+        padding: 2.4em 0px;
     }
 }
