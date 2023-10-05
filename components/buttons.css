@@ -24,6 +24,10 @@
     }
 }
 
+.btn-small{
+    padding: 8px 24px;
+}
+
 .btn-primary {
     background: var(--btn-primary);
     color: var(--btn-primary-text);
@@ -36,6 +40,18 @@
     &:hover {
         box-shadow: none;
         filter: brightness(90%);
+    }
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1.8px solid var(--black);
+    columns: var(--black);
+
+    &:hover{
+        box-shadow: none;
+        background: var(--black);
+        color: #fff;
     }
 }
 
