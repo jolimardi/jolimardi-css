@@ -18,7 +18,7 @@ textarea {
     margin: 6px 0 0px;
     display: block;
     border: 1px solid var(--gray-border);
-    border-radius: 8px;
+    border-radius: var(--input-border-radius);
 
 
     font-weight: var(--fw);
@@ -56,6 +56,10 @@ textarea {
 
 /* ---------   Checkboxes   ------------ */
 
+.checkboxes-items {
+    margin-left: calc(var(--label-left-margin) + 6px);
+    padding-top: 3px;
+}
 .checkbox-item {
     display: block;
     min-height: 1.5rem;

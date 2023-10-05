@@ -188,3 +188,13 @@
         --gutter: 16px;
     }
 }
+
+
+/* 
+// ---------    Forms -----------
+*/
+
+:root{
+    --input-border-radius: 8px;
+    --label-left-margin: 12px;
+}

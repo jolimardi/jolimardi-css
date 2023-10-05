@@ -8,7 +8,7 @@ form, .form {
 .label {
     display: block;
     letter-spacing: 0px;
-    margin: 32px 0 8px 12px;
+    margin: 32px 0 8px var(--label-left-margin);
     font-weight: var(--fw-semibold);
     color: var(--black-title);
 }
