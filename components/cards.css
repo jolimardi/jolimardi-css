@@ -13,6 +13,31 @@
 }
 
 
+/* Listings */
+@media(max-width: 960px) {
+    .listing-4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 830px) {
+    .listing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 620px) {
+    .listing {
+        gap: 16px 16px;
+    }
+    .listing-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 440px) {
+    .listing, .listing-2, .listing-4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 .card {
     border-radius: 8px;
