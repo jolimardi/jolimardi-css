@@ -1,0 +1,61 @@
+/* ------------------- Pagination - Laravel Default template ------------------ */
+
+.pagination {
+    margin: 32px auto 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 50%;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        box-sizing: border-box;
+        color: var(--accent);
+        border: 1px solid transparent;
+        background: none;
+        text-align: center;
+        transition: .15s;
+        font-size: var(--fs);
+        font-weight: var(--fw-semibold);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none !important;
+    }
+    .active {
+        &, &:hover {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+            cursor: default !important;
+            font-weight: var(--fw-light);
+        }
+    }
+    a:hover {
+        border-color: var(--gray-border);
+        transform: scale(1.1);
+    }
+    .dots {
+        padding: 0;
+        cursor: default;
+        opacity: .3;
+    }
+    .arrow {
+        border-color: transparent;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px){
+    .pagination{
+        gap: 8px 7px;
+    }
+}
