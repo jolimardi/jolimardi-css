@@ -183,7 +183,7 @@
     /* left and right margin from side of viewport (max-width x padding) */
     --gutter: 32px;
 }
-@media(max-width: 460px) {
+@media(max-width: 560px) {
     :root {
         --gutter: 16px;
     }
