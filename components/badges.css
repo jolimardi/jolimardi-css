@@ -14,15 +14,30 @@
     background: var(--btn-primary);
     color: var(--btn-primary-text);
 }
-
+a.badge-primary:hover{
+    background-color: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #fff;
+}
 .badge-secondary {
     background: var(--btn-secondary);
-    color: var(--accent);
+    color: var(--black-alt);
+}
+a.badge-secondary:hover{
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
 .badge-outline {
     background-color: transparent;
-    border: 1.8px solid var(--black);
+    border: 1.8px solid var(--black-alt);
+    color: var(--black-alt);
+}
+a.badge-outline:hover{
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
 }
 
 .badge-gradient {
@@ -30,6 +45,12 @@
     background: var(--gradient-btn);
     background-size: 120%;
     background-position-x: center;
+}
+
+a.badge{
+    text-decoration: none;
+    cursor: pointer;
+    transition: .1s;
 }
 
 .badges {
