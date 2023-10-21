@@ -58,4 +58,5 @@ a.badge{
     display: flex;
     align-items: flex-start;
     gap: 4px;
+    flex-wrap: wrap;
 }
