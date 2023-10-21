@@ -1,0 +1,40 @@
+/* -------------   Buttons   ------------ */
+
+.badge {
+    font-size: var(--xs-fs);
+    font-weight: var(--fw-semibold);
+    padding: 4px 18px;
+    border-radius: 60px;
+    letter-spacing: 0.04ch;
+    display: inline-block;
+    cursor: default;
+}
+
+.badge-primary {
+    background: var(--btn-primary);
+    color: var(--btn-primary-text);
+}
+
+.badge-secondary {
+    background: var(--btn-secondary);
+    color: var(--accent);
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 1.8px solid var(--black);
+}
+
+.badge-gradient {
+    color: #fff;
+    background: var(--gradient-btn);
+    background-size: 120%;
+    background-position-x: center;
+}
+
+.badges {
+    margin: 1em 0 0.4em;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}

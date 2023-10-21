@@ -19,6 +19,7 @@
 @import 'components/buttons.css';
 @import 'components/flash-messages.css';
 @import 'components/pagination.css';
+@import 'components/badges.css';
 @import 'components/slideshow-glide-js.css';
 
 @import 'helpers/text.css';

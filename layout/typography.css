@@ -98,7 +98,7 @@ h5, .h5, .subheading {
     margin-top: 0;
 
     & + h1, & + h2 {
-        margin-top: var(--fs);
+        margin-top: 9px;
     }
 }
 
