@@ -15,7 +15,6 @@
     right: 0;
     z-index: 101;
     transition: all 0.15s ease-out;
-    overflow: hidden;
     min-width: 340px;
     box-sizing: border-box;
     padding: 0;
