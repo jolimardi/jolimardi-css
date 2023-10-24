@@ -53,3 +53,10 @@
         padding: 2.4em 0px;
     }
 }
+
+
+@media(max-width: 700px) {
+    .section {
+        padding: 2em 0px;
+    }
+}
