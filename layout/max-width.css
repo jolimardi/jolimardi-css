@@ -10,15 +10,17 @@
     padding-left: var(--gutter);
     padding-right: var(--gutter);
     flex-grow: 1;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 .max-width {
-    max-width: var(--max-width);
+    width: var(--max-width);
 }
 .max-width-large {
-    max-width: var(--max-width-large);
+    width: var(--max-width-large);
 }
 .max-width-small {
-    max-width: var(--max-width-small)
+    width: var(--max-width-small)
 }
 .centered {
     text-align: center;
