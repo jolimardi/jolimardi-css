@@ -62,6 +62,7 @@
     display: flex;
     justify-content: center;
     gap: 6px;
+    margin-top: 26px;
 }
 .glide__bullet {
     width: 8px;
