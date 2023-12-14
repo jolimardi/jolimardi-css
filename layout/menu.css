@@ -6,6 +6,11 @@
     transition: all 0.15s ease-out;
     padding: 0 0;
 
+    &, li{
+        list-style: none;
+    }
+
+
     a {
         color: var(--black-title);
         display: inline-block;

@@ -12,10 +12,12 @@
 @import 'forms/form.css';
 @import 'forms/inputs.css';
 @import 'forms/selectize.css';
+@import 'forms/show-password.css';
 
 @import 'components/separators.css';
 @import 'components/icons.css';
 @import 'components/cards.css';
+@import 'components/panels.css';
 @import 'components/buttons.css';
 @import 'components/flash-messages.css';
 @import 'components/pagination.css';
