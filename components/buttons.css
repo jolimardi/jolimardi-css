@@ -85,6 +85,15 @@
     }
 }
 
+.btn-red{
+    background: var(--red);
+    color: #fff;
+
+    &:hover{
+        background: var(--black);
+    }
+}
+
 .btns {
     margin-top: 2em;
     display: flex;

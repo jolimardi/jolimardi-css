@@ -38,6 +38,11 @@
         color: var(--gray-text);
     }
 }
+.text-red{
+    &, *{
+        color: var(--red);
+    }
+}
 .text-gradient{
     background-clip: text;
     /*-webkit-background-clip: text;*/
