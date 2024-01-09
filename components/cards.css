@@ -109,3 +109,7 @@ a.card, .card a {
         color: var(--black-title);
     }
 }
+
+[data-href]{
+    cursor: pointer;
+}
