@@ -262,6 +262,7 @@
 .menu.level-1 {
     --padding-x: 28px;
     --padding-y: 15px;
+    --additional-padding: 0;
     position: absolute;
     background: #fff;
     border-radius: 8px;
