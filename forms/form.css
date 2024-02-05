@@ -52,6 +52,6 @@ label, .label {
     color: var(--red);
     font-weight: var(--fw-semibold);
     font-size: var(--sm-fs);
-    margin-left: 12px;
+    margin-left: var(--label-left-margin);
     margin-top: 4px;
 }
