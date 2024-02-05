@@ -5,18 +5,18 @@
     border-radius: 10px;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.08);
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
     display: block;
     transition: .15s;
     background: #fff;
 
+    margin: 2em 0;
 }
 
 .panel-body {
     flex: 1 1 auto;
     padding: 2em 2.2em 2.2em;
-    background: #fff;
     position: relative;
     z-index: 1;
 
