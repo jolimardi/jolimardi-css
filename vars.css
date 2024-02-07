@@ -1,4 +1,4 @@
-/* 
+/*
 // ---------    Font sizes and line-heights -----------
 */
 
@@ -91,7 +91,7 @@
 
 
 
-/* 
+/*
 // ---------    Colors -----------
 */
 
@@ -113,7 +113,7 @@
     --light-gray: #F4F6FA;
     --light-gray-alt: #E6EAEF;
     /* Darker gray to separate sections */
-    --gray-border: rgba(99, 123, 171, 0.2);
+    --gray-border: rgba(99, 123, 171, 0.1);
     --gray-text: #95aaca;
 
     --red: #a71c1c;
@@ -126,7 +126,7 @@
 
 
 
-/* 
+/*
 // ---------    Gradients -----------
 */
 
@@ -149,7 +149,7 @@
 
 
 
-/* 
+/*
 // ---------    Buttons -----------
 */
 
@@ -171,7 +171,7 @@
 
 }
 
-/* 
+/*
 // ---------    Max Widths -----------
 */
 
@@ -190,7 +190,7 @@
 }
 
 
-/* 
+/*
 // ---------    Forms -----------
 */
 
