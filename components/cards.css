@@ -113,3 +113,9 @@ a.card, .card a {
 [data-href]{
     cursor: pointer;
 }
+
+
+.card.flat{
+    box-shadow: none;
+    border: 1px solid var(--gray-border);
+}

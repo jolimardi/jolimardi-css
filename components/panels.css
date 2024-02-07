@@ -27,6 +27,13 @@
 }
 
 
+.panel.flat{
+    box-shadow: none;
+    border: 2px solid var(--gray-border);
+}
+
+
+
 @media(max-width: 768px){
     .panel-body{
         padding: 1.2em 1.4em 1.4em;
