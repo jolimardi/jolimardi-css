@@ -2,6 +2,7 @@
 
 .section {
     padding: 2.8em 0px;
+    box-sizing: border-box;
 
     &.gray {
         background: var(--light-gray);
