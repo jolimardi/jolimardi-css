@@ -14,6 +14,7 @@
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
+    line-height: 1.2;
 
 
     box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
@@ -25,7 +26,7 @@
 }
 
 .btn-small{
-    padding: 8px 24px;
+    padding: 10px 24px;
 }
 
 .btn-primary {
@@ -79,6 +80,7 @@
     box-shadow: none !important;
     color: var(--black-title);
     font-weight: var(--fw-bold);
+    letter-spacing: 0.035ch;
 
     &:hover{
         text-decoration: underline;
@@ -101,3 +103,6 @@
     gap: 1em;
     flex-wrap: wrap;
 }
+
+
+.delete-confirm{ cursor: pointer; }
