@@ -44,7 +44,7 @@
     /* No 300 for this site */
 }
 
-@media(max-width: 1560px) {
+@media (max-width: 1560px) {
     :root {
         /* titles */
         --h1: 48px;
@@ -55,7 +55,7 @@
         --h4-lh: var(--lh);
     }
 }
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     :root {
         --lh: 1.7;
 
@@ -66,7 +66,7 @@
     }
 }
 
-@media(max-width: 640px) {
+@media (max-width: 640px) {
     :root {
         --fs: 15.5px;
         --lh: 1.5;
@@ -96,13 +96,13 @@
 */
 
 :root {
-    --black: #131A28;
+    --black: #131a28;
     /* Text black */
     --black-alt: #304164;
     /* Lighter black for secondary text */
     --black-title: #000;
     --white: #fff;
-    --blue: #4D20FF;
+    --blue: #4d20ff;
     --accent: var(--blue);
     /* Links, text on white backgrounds */
     --accent-alt: var(--accent);
@@ -110,8 +110,8 @@
     --accent-dark: #2b0aaf;
     /* Buttons hover (darker --accent-alt) */
 
-    --light-gray: #F4F6FA;
-    --light-gray-alt: #E6EAEF;
+    --light-gray: #f4f6fa;
+    --light-gray-alt: #e6eaef;
     /* Darker gray to separate sections */
     --gray-border: rgba(99, 123, 171, 0.1);
     --gray-text: #95aaca;
@@ -131,9 +131,9 @@
 */
 
 :root {
-    --gradient-left: #2D00E0;
-    --gradient-middle: #3412FF;
-    --gradient-right: #9E00FF;
+    --gradient-left: #2d00e0;
+    --gradient-middle: #3412ff;
+    --gradient-right: #9e00ff;
     --gradient-angle: 120deg;
 
     --gradient: linear-gradient(var(--gradient-angle), var(--gradient-left) 0%, var(--gradient-middle) 50%, var(--gradient-right) 100%);
@@ -142,7 +142,7 @@
     /* La partie "gauche" avant 50% du gradient sert pour l'hover, après 50% c'est le gradient affiché avant le hover */
 
 
-    --gradient-section: linear-gradient(114deg, #8000CE 0%, #24138D 34%, #2006A1 71%, #2A00D2 94%);
+    --gradient-section: linear-gradient(114deg, #8000ce 0%, #24138d 34%, #2006a1 71%, #2a00d2 94%);
 
 }
 
@@ -183,7 +183,7 @@
     /* left and right margin from side of viewport (max-width x padding) */
     --gutter: 32px;
 }
-@media(max-width: 560px) {
+@media (max-width: 560px) {
     :root {
         --gutter: 16px;
     }
