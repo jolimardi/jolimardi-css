@@ -75,7 +75,7 @@ textarea {
 
         &:focus {
             box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
-        outline: none;
+            outline: none;
         }
 
         &:checked {
@@ -128,3 +128,4 @@ textarea {
         }
     }
 }
+.centered .checkbox-item.is-switch { justify-content: center; }
