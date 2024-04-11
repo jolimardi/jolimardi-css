@@ -11,7 +11,8 @@
     gap: var(--gap-y) var(--gap-x);
 
     .card {
-        width: calc(100% / var(--per-row) - (var(--per-row) - 1) / var(--per-row) * var(--gap-x));
+        /* On ajoute le -1px pour éviter les arrondis au-dessus qui dépassent 100% par ligne au final */
+        width: calc(100% / var(--per-row) - (var(--per-row) - 1) * var(--gap-x) / var(--per-row) - 1px);
         /* flex-grow: 1; */
     }
 
