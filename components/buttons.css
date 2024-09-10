@@ -1,6 +1,6 @@
 /* -------------   Buttons   ------------ */
 
-.btn {
+.btn{
     text-decoration: none;
     padding: var(--btn-padding);
     border-radius: var(--btn-radius);
@@ -20,8 +20,19 @@
     box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 0px;
     transition: .15s;
 
-    &:hover {
+    &:hover{
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
+    }
+
+    .btn-icon{
+        vertical-align: -0.21em;
+        font-size: 1.2em;
+    }
+
+    &.btn-disabled{
+        opacity: 0.45;
+        pointer-events: none;
+        cursor: not-allowed;
     }
 }
 
@@ -29,40 +40,56 @@
     padding: 10px 24px;
 }
 
-.btn-primary {
+.btn-primary{
     background: var(--btn-primary);
     color: var(--btn-primary-text);
 }
 
-.btn-secondary {
+.btn-secondary{
     background: var(--btn-secondary);
     color: var(--btn-secondary-text);
 
-    &:hover {
+    &:hover{
         box-shadow: none;
         filter: brightness(90%);
     }
 }
 
 .btn-outline{
-    background-color: transparent;
-    border: 1.8px solid var(--black);
-    columns: var(--black);
+    --outline-color: var(--accent);
+    background-color: transparent !important;
+    border: var(--btn-outline-border-width) solid var(--outline-color);
+    padding: var(--btn-outline-padding);
+    box-shadow: none !important;
 
     &:hover{
         box-shadow: none;
-        background: var(--black);
+        background: var(--outline-color);
         color: #fff;
+    }
+
+    &.btn-black{
+        --outline-color: var(--black-title);
+        box-shadow: none !important;
+    }
+    &.btn-white{
+        --outline-color: #fff;
+        &, & *{ color: #fff !important; }
+        box-shadow: none !important;
+        &:hover{
+            background: #fff !important;
+            &, & *{ color: var(--black-title) !important; }
+        }
     }
 }
 
-.btn-gradient {
+.btn-gradient{
     color: #fff;
     background: var(--gradient-btn);
     background-size: 120%;
     background-position-x: center;
 
-    &:hover {
+    &:hover{
         background-size: 160%;
         background-position-x: 0;
     }
@@ -87,6 +114,15 @@
     }
 }
 
+.btn-white{
+    background: #fff;
+    &, & *{ color: var(--black-title) !important; }
+
+    &:hover{
+        background: var(--black-title);
+        &, & *{ color: #fff !important; }
+    }
+}
 .btn-red{
     background: var(--red);
     color: #fff;
@@ -96,7 +132,7 @@
     }
 }
 
-.btns {
+.btns{
     margin-top: 2em;
     display: flex;
     align-items: flex-start;
