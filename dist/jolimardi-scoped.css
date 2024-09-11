@@ -1587,16 +1587,18 @@ $('input[type=password]').each(function (id, elem) {
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 
-.html-preview .btn .btn-icon{
-        vertical-align: -0.21em;
-        font-size: 1.2em;
-    }
-
 .html-preview .btn.btn-disabled{
         opacity: 0.45;
         pointer-events: none;
         cursor: not-allowed;
     }
+
+/* Icone svg dans un bouton */
+
+.html-preview .btn-icon{
+    vertical-align: -0.21em;
+    font-size: 1.2em;
+}
 
 .html-preview .btn-small{
     padding: 10px 24px;
@@ -1708,6 +1710,10 @@ $('input[type=password]').each(function (id, elem) {
     gap: 1em;
     flex-wrap: wrap;
 }
+
+.html-preview .btns.centered{
+        justify-content: center;
+    }
 
 .html-preview .delete-confirm{ cursor: pointer; }
 

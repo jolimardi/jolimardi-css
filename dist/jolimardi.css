@@ -1712,16 +1712,18 @@ a.card:not(.btn), .card a:not(.btn) {
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 
-.btn .btn-icon{
-        vertical-align: -0.21em;
-        font-size: 1.2em;
-    }
-
 .btn.btn-disabled{
         opacity: 0.45;
         pointer-events: none;
         cursor: not-allowed;
     }
+
+/* Icone svg dans un bouton */
+
+.btn-icon{
+    vertical-align: -0.21em;
+    font-size: 1.2em;
+}
 
 .btn-small{
     padding: 10px 24px;
@@ -1844,6 +1846,10 @@ a.card:not(.btn), .card a:not(.btn) {
     gap: 1em;
     flex-wrap: wrap;
 }
+
+.btns.centered{
+        justify-content: center;
+    }
 
 .delete-confirm{ cursor: pointer; }
 

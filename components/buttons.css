@@ -24,16 +24,16 @@
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
     }
 
-    .btn-icon{
-        vertical-align: -0.21em;
-        font-size: 1.2em;
-    }
-
     &.btn-disabled{
         opacity: 0.45;
         pointer-events: none;
         cursor: not-allowed;
     }
+}
+/* Icone svg dans un bouton */
+.btn-icon{
+    vertical-align: -0.21em;
+    font-size: 1.2em;
 }
 
 .btn-small{
@@ -138,6 +138,9 @@
     align-items: flex-start;
     gap: 1em;
     flex-wrap: wrap;
+    &.centered{
+        justify-content: center;
+    }
 }
 
 
