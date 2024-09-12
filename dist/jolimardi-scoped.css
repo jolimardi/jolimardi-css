@@ -1916,6 +1916,15 @@ $('input[type=password]').each(function (id, elem) {
     background-position-x: center;
 }
 
+.html-preview .badge-white{
+    color: var(--black-title);
+    background: #fff;
+}
+
+.html-preview a.badge-white:hover{
+    color: var(--light-gray-alt);
+}
+
 .html-preview a.badge{
     text-decoration: none;
     cursor: pointer;

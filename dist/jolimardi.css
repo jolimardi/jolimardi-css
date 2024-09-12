@@ -2085,6 +2085,17 @@ a.badge-outline:hover{
     background-position-x: center;
 }
 
+.badge-white{
+    color: #000;
+    color: var(--black-title);
+    background: #fff;
+}
+
+a.badge-white:hover{
+    color: #e6eaef;
+    color: var(--light-gray-alt);
+}
+
 a.badge{
     text-decoration: none;
     cursor: pointer;
