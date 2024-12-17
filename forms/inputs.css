@@ -52,7 +52,27 @@ textarea {
     }
 }
 
-
+/* ---------   Suffixes     -------------- */
+.input.has-suffix{
+    .input-container{
+        display: flex;
+        align-items: center;
+        gap: 0 6px;
+    }
+    .input-suffix{ margin-top: 6px;}
+}
+.no-step-controls{
+    /* Pour Chrome, Safari, Edge */
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Pour Firefox */
+    input[type=number]{ -moz-appearance: textfield; }
+}
+.input-text-right{
+    input{ text-align: right; }
+}
 
 /* ---------   Checkboxes   ------------ */
 
