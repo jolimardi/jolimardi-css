@@ -101,6 +101,9 @@ h5, .h5, .subheading {
         margin-top: 9px;
     }
 }
+.subheading{
+    color: var(--accent);
+}
 
 /* ---------   Enchainements (à compléter)  ---------- */
 p + h2, p + h3, p + h4{

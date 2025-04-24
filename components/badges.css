@@ -47,6 +47,14 @@ a.badge-outline:hover{
     background-position-x: center;
 }
 
+.badge-white{
+    color: var(--black-title);
+    background: #fff;
+}
+a.badge-white:hover{
+    color: var(--light-gray-alt);
+}
+
 a.badge{
     text-decoration: none;
     cursor: pointer;

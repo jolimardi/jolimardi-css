@@ -11,7 +11,8 @@
     gap: var(--gap-y) var(--gap-x);
 
     .card {
-        width: calc(100% / var(--per-row) - (var(--per-row) - 1) / var(--per-row) * var(--gap-x));
+        /* On ajoute le -1px pour éviter les arrondis au-dessus qui dépassent 100% par ligne au final */
+        width: calc(100% / var(--per-row) - (var(--per-row) - 1) * var(--gap-x) / var(--per-row) - 1px);
         /* flex-grow: 1; */
     }
 
@@ -41,7 +42,8 @@
 
 @media(max-width: 620px) {
     .listing {
-        gap: 16px 16px;
+        --gap-x: 16px;
+        --gap-y: 16px;
     }
     .listing-4 {
         --per-row: 2;
@@ -75,7 +77,6 @@
     padding: .9em 1.2em 1.2em;
     font-size: var(--sm-fs);
     line-height: var(--sm-lh);
-    background: #fff;
     position: relative;
     z-index: 1;
 
@@ -108,4 +109,14 @@ a.card, .card a {
         text-decoration: none;
         color: var(--black-title);
     }
+}
+
+[data-href]{
+    cursor: pointer;
+}
+
+
+.card.flat{
+    box-shadow: none;
+    border: 1px solid var(--gray-border);
 }

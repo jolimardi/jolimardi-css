@@ -17,7 +17,7 @@ textarea {
     width: 100%;
     margin: 6px 0 0px;
     display: block;
-    border: 1px solid var(--gray-border);
+    border: 1px solid var(--input-border);
     border-radius: var(--input-border-radius);
 
 
@@ -32,7 +32,7 @@ textarea {
     &:focus {
         box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
         outline: none;
-        border-color: var(--gray-border);
+        border-color: var(--input-border);
     }
 
     &::placeholder {
@@ -52,7 +52,27 @@ textarea {
     }
 }
 
-
+/* ---------   Suffixes     -------------- */
+.input.has-suffix{
+    .input-container{
+        display: flex;
+        align-items: center;
+        gap: 0 6px;
+    }
+    .input-suffix{ margin-top: 6px;}
+}
+.no-step-controls{
+    /* Pour Chrome, Safari, Edge */
+    input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    /* Pour Firefox */
+    input[type=number]{ -moz-appearance: textfield; }
+}
+.input-text-right{
+    input{ text-align: right; }
+}
 
 /* ---------   Checkboxes   ------------ */
 
@@ -75,7 +95,7 @@ textarea {
 
         &:focus {
             box-shadow: rgba(77, 92, 255, 0.2) 0px 0px 0px 3px;
-        outline: none;
+            outline: none;
         }
 
         &:checked {
@@ -103,7 +123,7 @@ textarea {
         width: 2.4em;
         height: 1.4em;
         margin-left: -2.5em;
-        
+
         background-color: #fff;
         background-image: var(--switch-background);
         background-position: left center;
@@ -128,3 +148,4 @@ textarea {
         }
     }
 }
+.centered .checkbox-item.is-switch { justify-content: center; }

@@ -59,3 +59,14 @@
 #NotiflixNotifyOverlay{
     cursor: pointer;
 }
+
+/* Overrides the distance property */
+#NotiflixNotifyWrap{
+    inset: calc(var(--topbar-height) + 8px) 0 auto !important;
+}
+
+@media(max-width: 1080px){
+    #NotiflixNotifyWrap{
+        inset: calc(var(--topbar-mobile-height) + 8px) 0 auto !important;
+    }
+}

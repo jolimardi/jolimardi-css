@@ -16,7 +16,7 @@ label, .label {
     cursor: pointer;
 }
 .input:first-of-type > .label {
-    margin-top: 8px;
+    /*margin-top: 8px;*/
 }
 
 /* Aide sous un champ */
@@ -52,6 +52,6 @@ label, .label {
     color: var(--red);
     font-weight: var(--fw-semibold);
     font-size: var(--sm-fs);
-    margin-left: 12px;
+    margin-left: var(--label-left-margin);
     margin-top: 4px;
 }
