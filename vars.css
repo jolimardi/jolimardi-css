@@ -156,13 +156,16 @@
 
 :root {
     --btn-font-size: var(--sm-fs);
-    --btn-font-weight: 500;
+    --btn-font-weight: 400;
     --btn-line-height: 1.2;
-    --btn-letter-spacing: 0.8px;
+    --btn-letter-spacing: 0.08ch;
     --btn-word-spacing: 0.8px;
-    --btn-radius: 60px;
-    --btn-padding: 14px 25px;
-    --btn-min-width: 120px;
+    --btn-radius: 5px;
+    --btn-padding: 12px 24px;
+    /* On enlève la border-width du padding */
+    --btn-outline-padding: 12.2px 25px;
+    --btn-outline-border-width: 1.8px;
+    --btn-min-width: 160px;
 
     --btn-primary: var(--accent);
     --btn-primary-text: var(--white);
@@ -170,9 +173,6 @@
     --btn-secondary: var(--light-gray-alt);
     --btn-secondary-text: var(--black-title);
 
-    /* On enlève la border-width du padding */
-    --btn-outline-padding: 12.2px 25px;
-    --btn-outline-border-width: 1.8px;
 
     /* Espacement entre plusieurs boutons */
     --btns-gap: 6px 12px;

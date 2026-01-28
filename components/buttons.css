@@ -57,7 +57,7 @@
 
 .btn-outline{
     --outline-color: var(--accent);
-    background-color: transparent !important;
+    background-color: transparent;
     border: var(--btn-outline-border-width) solid var(--outline-color);
     padding: var(--btn-outline-padding);
     box-shadow: none !important;
