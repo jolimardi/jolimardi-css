@@ -21,6 +21,7 @@
         letter-spacing: 0.1ch;
         font-size: var(--sm-fs);
         text-decoration: none !important;
+        cursor: pointer !important;
 
         &:after {
             position: absolute;
@@ -39,7 +40,9 @@
 
         &.is-active:after {
             opacity: 1;
-            width: calc(100% - 36px);
+            width: auto;
+            left: 18px;
+            right: 18px;
             background: var(--accent) !important;
         }
 
@@ -332,6 +335,10 @@
     }
 
     & > a {}
+
+    a.is-active:after {
+        right: 42px;
+    }
 }
 
 
