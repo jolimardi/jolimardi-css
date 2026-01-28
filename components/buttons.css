@@ -136,11 +136,11 @@
     margin-top: 2em;
     display: flex;
     align-items: flex-start;
-    gap: 1em;
+    gap: var(--btns-gap);
     flex-wrap: wrap;
-    &.centered{
-        justify-content: center;
-    }
+}
+.btns.centered, .centered .btns:not(.not-centered) {
+    justify-content: center;
 }
 
 

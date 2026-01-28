@@ -172,6 +172,9 @@
     /* On enlève la border-width du padding */
     --btn-outline-padding: 12.2px 25px;
     --btn-outline-border-width: 1.8px;
+
+    /* Espacement entre plusieurs boutons */
+    --btns-gap: 6px 12px;
 }
 
 /*
