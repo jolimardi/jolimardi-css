@@ -132,6 +132,16 @@
     }
 }
 
+.btn-link{
+    letter-spacing: 0.04ch;
+    color: var(--accent) !important;
+    font-weight: var(--fw-semibold);
+    svg{ margin-left: 0; transition: .15s; position: relative; left: 0; }
+}
+a.btn-link:hover{
+    svg{ left: 2px;}
+}
+
 .btns{
     margin-top: 2em;
     display: flex;
