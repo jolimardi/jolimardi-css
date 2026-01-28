@@ -115,6 +115,7 @@
     /* Darker gray to separate sections */
     --gray-border: rgba(99, 123, 171, 0.1);
     --gray-text: #95aaca;
+    --blue-help: #0085a1;
 
     --red: #a71c1c;
     --red-bg: #f8d7da;

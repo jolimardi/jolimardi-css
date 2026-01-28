@@ -19,11 +19,42 @@ label, .label {
     /*margin-top: 8px;*/
 }
 
-/* Aide sous un champ */
-.form-text {
-    margin-top: .25rem;
-    font-size: .875em;
-    color: var(--gray-text);
+/* Sert pour les formulaires, deux champs sur la même ligne */
+.line{
+    display: flex;
+    gap: 12px;
+    align-content: center;
+    padding: 3px 0;
+    & > *{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Aide sous un champ - Callout bleu fond gris + icône */
+.help{
+    font-size: var(--sm-fs);
+    font-style: italic;
+    line-height: 1.25;
+    margin: 1em 0;
+    color: var(--blue-help);
+    position: relative;
+    background: var(--light-gray);
+    border-radius: 5px;
+    padding: 8px 12px !important;
+    padding-left: 32px !important;
+    display: inline-block;
+    &:before{
+        position: absolute;
+        content: "";
+        top: calc(50% - 9px);
+        left: 8px;
+        background: url('/resources/icons/icon-help.svg') no-repeat center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+
+    }
 }
 
 
