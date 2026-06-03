@@ -76,19 +76,18 @@ textarea {
 
 /* ---------   Checkboxes   ------------ */
 
-.checkboxes-items {
+.checkboxes-items, .radios-items{
     margin-left: calc(var(--label-left-margin) + 6px);
     padding-top: 3px;
 }
-.checkbox-item {
-    display: block;
+.checkbox-item, .radio-item{
     min-height: 1.5rem;
     margin-top: 6px;
     display: flex;
     align-items: center;
     gap: 6px;
 
-    .checkbox {
+    .checkbox, .radio{
         width: 1.2em;
         height: 1.2em;
         cursor: pointer;
@@ -108,21 +107,24 @@ textarea {
 
 /* ---------   Switches checkboxes (.is-switch)   ------------ */
 
-.checkbox-item.is-switch {
-    padding-left: 2.5em;
+.checkbox-item.is-switch,
+.radio-item.is-switch{
+    padding-left: calc(2.4em + 6px);
+    margin-left: calc(-1 * var(--label-left-margin));
     display: flex;
     align-items: center;
     gap: 4px;
 
-    .checkbox {
+    .checkbox, .radio{
         --switch-background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%28 82, 99, 133, 0.6 %29'/%3e%3c/svg%3e");
         --switch-border: rgba(82, 99, 133, 0.6); /* Plus sombre que la border normale */
 
         padding: 0;
         vertical-align: top;
         width: 2.4em;
+        min-width: 2.4em;
         height: 1.4em;
-        margin-left: -2.5em;
+        margin-left: -2.4em;
 
         background-color: #fff;
         background-image: var(--switch-background);
@@ -148,4 +150,5 @@ textarea {
         }
     }
 }
-.centered .checkbox-item.is-switch { justify-content: center; }
+.centered .checkbox-item.is-switch,
+.centered .radio-item.is-switch{ justify-content: center; }
